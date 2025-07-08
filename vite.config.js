@@ -8,6 +8,7 @@ import svgr from 'vite-plugin-svgr'
 import { visualizer } from "rollup-plugin-visualizer";
 
 export default defineConfig({
+  base: '/portfolio/',
   plugins: [react(), tailwindcss(), svgr(), visualizer()],
   resolve: {
     alias: {
